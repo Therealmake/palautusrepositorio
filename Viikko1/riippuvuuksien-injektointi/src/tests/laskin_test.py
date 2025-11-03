@@ -21,3 +21,10 @@ class TestLaskin(unittest.TestCase):
         laskin.suorita()
 
         self.assertEqual(io.outputs[0], "Summa: 4")
+
+    def test_consecutive(self):
+        io = StubIO(["1", "2", "3", "4", "-9999"])
+        laskin = Laskin(io)
+        laskin.suorita()
+
+        self.assertEqual(io.outputs, ["Summa: 3", "Summa: 7"])
