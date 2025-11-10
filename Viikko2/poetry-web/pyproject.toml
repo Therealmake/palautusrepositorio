@@ -1,0 +1,19 @@
+[project]
+name = "poetry-web"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Therealmake",email = "hemmimarkus1@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.12"
+dependencies = [
+    "pytest (>=9.0.0,<10.0.0)",
+    "flask-sqlalchemy (>=3.1.1,<4.0.0)",
+    "fastapi (>=0.121.1,<0.122.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
